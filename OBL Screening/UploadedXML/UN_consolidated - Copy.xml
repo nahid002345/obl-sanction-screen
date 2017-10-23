@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="../resources/xsd/consolodated_list.xsd"
+                   dateGenerated="2015-02-26T16:23:35.52-05:00">
+   <INDIVIDUALS>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110404</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHAMMAD BAQER</FIRST_NAME>
+         <SECOND_NAME>ZOLQADR</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.043</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.D.7]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>General/IRGC officer</VALUE>
+            <VALUE>Deputy Interior Minister for Security Affairs</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mohammad Bakr Zolqadr; Mohammad Bakr Zolkadr; Mohammad Baqer Zolqadir; Mohammad Baqer Zolqader</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Zolqadr</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110405</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHAMMAD REZA</FIRST_NAME>
+         <SECOND_NAME>ZAHEDI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.042</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.D.3]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Brigadier General/Commander of IRGC Ground Forces</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mohammad Reza Zahidi; Mohammad Raza Zahedi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1944</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Isfahan</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Zahedi Mohammad Reza</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110406</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ALI AKBAR</FIRST_NAME>
+         <SECOND_NAME>TABATABAEI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.041</REFERENCE_NUMBER>
+         <LISTED_ON>2012-04-18</LISTED_ON>
+         <COMMENTS1>Facilitated a breach of paragraph 5 of resolution 1747 (2007) prohibiting the export of arms and related materiel from Iran. [Old Reference # I.AC.50.18.04.12.(2)]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Member of the IRGC Qods Force operating under the direction of Qods Force Commander, Major General Qasem Soleimani who was designated by the UN Security Council in resolution 1747 (2007) (designated under IRi.039).</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Iran</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Sayed Akbar Tahmaesebi; Syed Akber Tahmaesebi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ali Akber Tabatabaei; Ali Akber Tahmaesebi; Ali Akbar Tahmaesebi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1967</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>9003213</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran / unknown</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>6620505</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran / unknown</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Tabatabaei Ali Akbar</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110407</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>GHASEM</FIRST_NAME>
+         <SECOND_NAME>SOLEYMANI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.040</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.13]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Director of Uranium Mining Operations at the Saghand Uranium Mine</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ghasim Soleymani; Ghasem Sulaymani; Ghasem Solaymani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Soleymani Ghasem</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110408</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>QASEM</FIRST_NAME>
+         <SECOND_NAME>SOLEIMANI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.039</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Promoted to Major General, retaining his position as Commander of Qods force. [Old Reference # I.47.D.6]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Brigadier General/Commander of Qods force</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Qasim Soleimani; Qasem Sulaimani; Qasim Sulaimani; Qasim Sulaymani; Qasem Sulaymani; Kasim Soleimani; Kasim Sulaimani; Kasim Sulaymani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Haj Qasem; Haji Qassem; Sardar Soleimani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1957-03-11</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Qom</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>008827 </NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Soleimani Qasem</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110409</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>HOSEIN</FIRST_NAME>
+         <SECOND_NAME>SALIMI </SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.038</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.37.D.1]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>General/Commander of the Air Force, IRGC (Pasdaran)</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Husain Salimi; Hosain Salimi; Hussain Salimi; Hosein Saleemi; Husain Saleemi; Hosain Saleemi; Hussain Saleemi; Hossein Salimi; Hossein Saleemi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>D08531177 </NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Salimi Hosein</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+   </INDIVIDUALS>
+   <ENTITIES>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110326</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>YAZD METALLURGY INDUSTRIES (YMI)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.078</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>YMI is a subordinate of DIO. [Old Reference #E.29.I.22].</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Yazd Ammunition Manufacturing and Metallurgy Industries</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Directorate of Yazd Ammunition and Metallurgy Industries</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STREET>Pasdaran Avenue, next to Telecommunication Industry</STREET>
+            <CITY>Tehran, 16588</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Postal Box 89195/878</STREET>
+            <CITY>Yazd</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 89195-678</STREET>
+            <CITY>Yazd</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Km 5 of Taft Road</STREET>
+            <CITY>Yazd</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Yazd Metallurgy Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110327</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>YAS AIR</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.077</REFERENCE_NUMBER>
+         <LISTED_ON>2012-12-20</LISTED_ON>
+         <COMMENTS1>Yas Air is the new name for Pars Air, a company that was owned by Pars Aviation Services Company, which in turn was designated by the United Nations Security Council in resolution 1747 (2007). Yas Air has assisted Pars Aviation Services Company, a United Nations-designated entity, in violating paragraph 5 of resolution 1747 (2007). [Old Reference # I.AC.50.20.12.12.(1)]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Mehrabad International Airport, Next to Terminal No. 6</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Yas Air</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110328</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>YA MAHDI INDUSTRIES GROUP</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.076</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Subordinate to AIO, which is involved in international purchases of missile equipment. [Old Reference # E.47.A.10]</COMMENTS1>
+         <DESIGNATION/>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Ya Mahdi Industries Group</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110329</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>TIZ PARS</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.075</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Tiz Pars is a cover name for SHIG. Between April and July 2007, Tiz Pars attempted to procure a five axis laser welding and cutting machine, which could make a material contribution to Iran's missile programme, on behalf of SHIG. [Old Reference # E.29.I.21]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Damavand Tehran Highway</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Tiz Pars</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110330</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>TAMAS COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.074</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>Involved in enrichment-related activities. TAMAS is the overarching body, under which four subsidiaries have been established, including one for uranium extraction to concentration and another in charge of uranium processing, enrichment and waste. [Old Reference # E.03.III.12]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>TAMAS Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110331</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SPECIAL INDUSTRIES GROUP (SIG)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.073</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Subordinate of DIO. [Old Reference # E.29.I.20]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Pasdaran Avenue, PO Box 19585/777</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Special Industries Group (SIG)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110332</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SOUTH SHIPPING LINE IRAN (SSL) </FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.072</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>[Old Reference # E.29.III.3]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Qaem Magham Farahani St.</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Apt. No. 7, 3rd Floor, No. 2, 4th Alley, Gandi Ave.</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>South Shipping Line Iran (SSL) </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110333</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHO'A' AVIATION</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.071</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Produces micro-lights which IRGC has claimed it is using as part of its asymmetric warfare doctrine. [Old Reference # E.47.B.3]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Sho'a' Aviation</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110334</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHAHID SAYYADE SHIRAZI INDUSTRIES (SSSI)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.070</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>SSSI is owned or controlled by, or acts on behalf of, DIO. [Old Reference # E.29.I.19]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Next To Nirou Battery Mfg. Co, Shahid Babaii Expressway, Nobonyad Square</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Pasdaran St., P.O. Box 16765</STREET>
+            <CITY>Tehran, 1835</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Babaei Highway - Next to Niru M.F.G</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Shahid Sayyade Shirazi Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110335</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHAHID SATTARI INDUSTRIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.069</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, SBIG. [Old Reference # E.29.I.18]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Shahid Sattari Group Equipment Industries</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <CITY>Southeast Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Shahid Sattari Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110336</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHAHID KARRAZI INDUSTRIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.068</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, SBIG. [Old Reference # E.29.I.17]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <CITY> Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Shahid Karrazi Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110337</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHAHID HEMMAT INDUSTRIAL GROUP (SHIG)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.067</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Subordinate entity of AIO. [Old Reference # E.37.B.1]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Shahid Hemmat Industrial Group (SHIG)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110338</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHAHID BAGHERI INDUSTRIAL GROUP (SBIG)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.066</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Subordinate entity of AIO. [Old Reference # E.37.B.2]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Shahid Bagheri Industrial Group (SBIG)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>110339</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SEPASAD ENGINEERING COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.065</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acting on behalf of, KAA. [Old Reference # E.29.II.15]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Sepasad Engineering Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+   </ENTITIES>
+</CONSOLIDATED_LIST>

@@ -1,0 +1,232 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/BootStrap/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/BootStrap/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <%--<link href="~/Styles/site.css" rel="Stylesheet" type="text/css" />--%>
+    <link href="~/Styles/custom.css" rel="Stylesheet" type="text/css" />
+    <link href="~/Styles/jquery-ui-1.11.3.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/jquery-ui.min-1.11.3.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/datepicker.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/slider.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/fileinput.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/fileinput.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/jquery.progressTimer.css" rel="stylesheet" type="text/css" />
+    <%--jquery version 1.11.2--%>
+    <script language="javascript" type="text/javascript" src="Scripts/jquery-1.11.2.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/jquery-1.11.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/jquery.min.js"></script>
+    <%--jquery bootstrap--%>
+    <script language="javascript" type="text/javascript" src="Scripts/bootstrap.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/bootstrap-datepicker.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/bootstrap-slider.js"></script>
+    <%--<script language="javascript" type="text/javascript" src="Scripts/npm.js"></script>--%>
+    <script language="javascript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/respond.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/jquery.placeholder.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/jquery.placeholder.min.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/fileinput.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/fileinput.min.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/jquery.progressTimer.js"></script>
+    <%--jquery UI 1.11.3--%>
+    <script type="text/javascript" src="Scripts/jquery-ui-1.11.3.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-ui.min-1.11.3.js"></script>
+    <script type="text/javascript">
+
+        function showAlert() {
+            $("#lblMsg").show();
+        }
+
+        function onSuccessLogout(result) {
+            if (result == "Valid") window.location.replace("login.aspx");
+            else alert(result);
+        }
+        function onFailure(error) { alert(error); }
+
+        function LogOutNow() {
+            PageMethods.LogOutN(onSuccessLogout, onFailure);
+        }
+
+        function goBack() {
+            window.history.go(-1);
+            return false;
+        }
+
+        $(".nav a").on("click", function () {
+            $(".nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
+        });
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" style="padding: 10px 10px 10px 10px;">
+                <img class="img-responsive" src="Images/obllogo.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                    </span>
+                </button>
+                <label class="navbar-header" style="color: #fff;">
+                    OBL SCREENING
+                </label>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle.btn-primary" data-toggle="collapse"
+                        href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <asp:Label ID="lblUser" runat="server" Text="" CssClass="btn-success"></asp:Label>
+                    </a>
+                        <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                            <li><a href="#">My Profile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:LogOutNow()"><i class="glyphicon glyphicon-lock"></i>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="collapse" id="collapseExample">
+                <div class="well">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img alt="User Pic" src="Images/photo.jpg" class="img-circle">
+                            </div>
+                            <div class="col-md-5">
+                                <table class="table table-user-information">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Name:
+                                            </td>
+                                            <td>
+                                                <asp:Label ID="lblUName" runat="server" Text=""></asp:Label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                EmployeeID:
+                                            </td>
+                                            <td>
+                                                <asp:Label ID="lblEID" runat="server" Text=""></asp:Label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-5">
+                                <table class="table table-user-information">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Designation:
+                                            </td>
+                                            <td>
+                                                <asp:Label ID="lblDesgn" runat="server" Text=""></asp:Label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Department:
+                                            </td>
+                                            <td>
+                                                <asp:Label ID="lblDept" runat="server" Text=""></asp:Label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Branch:
+                                            </td>
+                                            <td>
+                                                <asp:Label ID="lblBranch" runat="server" Text=""></asp:Label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" id="LeftMenu" style="width: 20%;">
+                <ul class="list-unstyled">
+                    <li class="nav-header"><a href="#" data-toggle="collapse" data-target="#userMenu">
+                        <h5>
+                            Menu
+                        </h5>
+                    </a>
+                        <ul class="list-unstyled collapse in" id="userMenu">
+                            <li class="active"><a href="Dashboard.aspx"><i class="glyphicon glyphicon-dashboard">
+                            </i>Dashboard </a></li>
+                            <li><a href="SearchSanctionList.aspx"><i class=" glyphicon glyphicon-list-alt"></i>Sanction
+                                List</a></li>
+                            <%if (IsCTPCUser)
+                              { %>
+                            <li><a href="CTPCSearchSanctionList.aspx"><i class=" glyphicon glyphicon-list-alt"></i>CTPC Sanction List</a></li>
+                            <%} %>
+                            <%if (!string.IsNullOrEmpty(ReferUserType))
+                              { %>
+                            <li><a href="ReferInfoList.aspx"><i class=" glyphicon glyphicon-bell"></i>Refer Task
+                                List</a></li>
+                            <%} %>
+                            <li><a href="CustSancScreening.aspx"><i class="glyphicon glyphicon-list-alt"></i>Customer
+                                List
+                                <asp:Label ID="lblSancCustCount" runat="server" Text="0" CssClass="badge"> </asp:Label>
+                            </a></li>
+                            <li><a href="SearchLog.aspx"><i class="glyphicon glyphicon-search"></i>Search Log List</a></li>
+                            <li><a href="RequestedReferInfoList.aspx"><i class="glyphicon glyphicon-bell"></i>Requested
+                                Refer list</a></li>
+                            <%if (EmpId == "013030502575")
+                              { %>
+                            <li><a href="XMLFileUpload.aspx"><i class=" glyphicon glyphicon-file"></i>File Upload</a></li>
+                            <%} %>
+                        </ul>
+                    </li>
+                    <%--<li class="nav-header"><a href="#" data-toggle="collapse" data-target="#menu2">
+                        <h5>
+                            Reports
+                        </h5>
+                    </a>
+                        <ul class="list-unstyled collapse" id="menu2">
+                            <li><a href="#">Information &amp; Stats</a> </li>
+                        </ul>
+                    </li>--%>
+                </ul>
+            </div>
+            <div class="col-sm-9" style="width: 80%;">
+                <%--<%if (!string.IsNullOrEmpty(ReferUserType))
+                  { %>
+                <ul class="nav nav-pills" role="tablist" style="float: right;">
+                    <li role="presentation" class="active">
+                        <button class="btn btn-primary" type="button" disabled="disabled">
+                            Pending Refer <asp:Label ID="lblPendReferCount" runat="server" Text="0" CssClass="badge"> </asp:Label></button></li>
+                </ul>
+                <%} %>--%>
+                <form id="frmMasterPage" runat="server">
+                <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+                </asp:ScriptManager>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">Copyright of  <strong>ONE Bank Limited IT Dept</strong></footer>
+</body>
+</html>

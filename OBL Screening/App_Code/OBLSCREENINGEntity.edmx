@@ -1,0 +1,1352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="OBLSCREENINGModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="OBLSCREENINGModelStoreContainer">
+          <EntitySet Name="EXISTINGSANCCUSTINFO" EntityType="OBLSCREENINGModel.Store.EXISTINGSANCCUSTINFO" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FILEUPLOADLOG" EntityType="OBLSCREENINGModel.Store.FILEUPLOADLOG" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OSREFERINFO" EntityType="OBLSCREENINGModel.Store.OSREFERINFO" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OSSearchHistory" EntityType="OBLSCREENINGModel.Store.OSSearchHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OSUSER" EntityType="OBLSCREENINGModel.Store.OSUSER" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sdnEntry" EntityType="OBLSCREENINGModel.Store.sdnEntry" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SDN_DETAIL_INFO" EntityType="OBLSCREENINGModel.Store.SDN_DETAIL_INFO" store:Type="Views" store:Schema="dbo" store:Name="SDN_DETAIL_INFO">
+            <DefiningQuery>SELECT 
+      [SDN_DETAIL_INFO].[ID] AS [ID], 
+      [SDN_DETAIL_INFO].[SDN_ID] AS [SDN_ID], 
+      [SDN_DETAIL_INFO].[FIRSTNAME] AS [FIRSTNAME], 
+      [SDN_DETAIL_INFO].[LASTNAME] AS [LASTNAME], 
+      [SDN_DETAIL_INFO].[TITLE] AS [TITLE], 
+      [SDN_DETAIL_INFO].[SDNTYPE] AS [SDNTYPE], 
+      [SDN_DETAIL_INFO].[DOB] AS [DOB], 
+      [SDN_DETAIL_INFO].[POB] AS [POB], 
+      [SDN_DETAIL_INFO].[PROGRAM] AS [PROGRAM], 
+      [SDN_DETAIL_INFO].[NATIONALITY] AS [NATIONALITY], 
+      [SDN_DETAIL_INFO].[CITIZEN] AS [CITIZEN], 
+      [SDN_DETAIL_INFO].[LISTED_BY] AS [LISTED_BY], 
+      [SDN_DETAIL_INFO].[COMMENTS] AS [COMMENTS]
+      FROM [dbo].[SDN_DETAIL_INFO] AS [SDN_DETAIL_INFO]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="SDNLIST" EntityType="OBLSCREENINGModel.Store.SDNLIST" store:Type="Views" store:Schema="dbo" store:Name="SDNLIST">
+            <DefiningQuery>SELECT 
+      [SDNLIST].[ID] AS [ID], 
+      [SDNLIST].[FIRSTNAME] AS [FIRSTNAME], 
+      [SDNLIST].[LASTNAME] AS [LASTNAME], 
+      [SDNLIST].[SDNTYPE] AS [SDNTYPE], 
+      [SDNLIST].[SDNENTRY_ID] AS [SDNENTRY_ID], 
+      [SDNLIST].[ADDRESS1] AS [ADDRESS1], 
+      [SDNLIST].[ADDRESS2] AS [ADDRESS2], 
+      [SDNLIST].[ADDRESS3] AS [ADDRESS3], 
+      [SDNLIST].[CITY] AS [CITY], 
+      [SDNLIST].[POSTALCODE] AS [POSTALCODE], 
+      [SDNLIST].[COUNTRY] AS [COUNTRY], 
+      [SDNLIST].[DOB] AS [DOB], 
+      [SDNLIST].[PTYPE] AS [PTYPE], 
+      [SDNLIST].[LISTED_BY] AS [LISTED_BY]
+      FROM [dbo].[SDNLIST] AS [SDNLIST]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwADDRESSList" EntityType="OBLSCREENINGModel.Store.vwADDRESSList" store:Type="Views" store:Schema="dbo" store:Name="vwADDRESSList">
+            <DefiningQuery>SELECT 
+      [vwADDRESSList].[ID] AS [ID], 
+      [vwADDRESSList].[uid] AS [uid], 
+      [vwADDRESSList].[address1] AS [address1], 
+      [vwADDRESSList].[address2] AS [address2], 
+      [vwADDRESSList].[address3] AS [address3], 
+      [vwADDRESSList].[city] AS [city], 
+      [vwADDRESSList].[stateOrProvince] AS [stateOrProvince], 
+      [vwADDRESSList].[postalCode] AS [postalCode], 
+      [vwADDRESSList].[country] AS [country], 
+      [vwADDRESSList].[addressList_Id] AS [addressList_Id], 
+      [vwADDRESSList].[sdnEntry_Id] AS [sdnEntry_Id], 
+      [vwADDRESSList].[LISTED_BY] AS [LISTED_BY], 
+      [vwADDRESSList].[SDNTYPE] AS [SDNTYPE]
+      FROM [dbo].[vwADDRESSList] AS [vwADDRESSList]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwAKAList" EntityType="OBLSCREENINGModel.Store.vwAKAList" store:Type="Views" store:Schema="dbo" store:Name="vwAKAList">
+            <DefiningQuery>SELECT 
+      [vwAKAList].[ID] AS [ID], 
+      [vwAKAList].[uid] AS [uid], 
+      [vwAKAList].[type] AS [type], 
+      [vwAKAList].[category] AS [category], 
+      [vwAKAList].[lastName] AS [lastName], 
+      [vwAKAList].[firstName] AS [firstName], 
+      [vwAKAList].[sdnEntry_Id] AS [sdnEntry_Id], 
+      [vwAKAList].[akaList_Id] AS [akaList_Id], 
+      [vwAKAList].[LISTED_BY] AS [LISTED_BY], 
+      [vwAKAList].[SDNTYPE] AS [SDNTYPE]
+      FROM [dbo].[vwAKAList] AS [vwAKAList]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwCitizenList" EntityType="OBLSCREENINGModel.Store.vwCitizenList" store:Type="Views" store:Schema="dbo" store:Name="vwCitizenList">
+            <DefiningQuery>SELECT 
+      [vwCitizenList].[ID] AS [ID], 
+      [vwCitizenList].[country] AS [country], 
+      [vwCitizenList].[mainEntry] AS [mainEntry], 
+      [vwCitizenList].[citizenshipList_Id] AS [citizenshipList_Id], 
+      [vwCitizenList].[sdnEntry_Id] AS [sdnEntry_Id], 
+      [vwCitizenList].[LISTED_BY] AS [LISTED_BY], 
+      [vwCitizenList].[SDNTYPE] AS [SDNTYPE]
+      FROM [dbo].[vwCitizenList] AS [vwCitizenList]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwIDList" EntityType="OBLSCREENINGModel.Store.vwIDList" store:Type="Views" store:Schema="dbo" store:Name="vwIDList">
+            <DefiningQuery>SELECT 
+      [vwIDList].[ID] AS [ID], 
+      [vwIDList].[idType] AS [idType], 
+      [vwIDList].[idNumber] AS [idNumber], 
+      [vwIDList].[idCountry] AS [idCountry], 
+      [vwIDList].[idList_Id] AS [idList_Id], 
+      [vwIDList].[sdnEntry_Id] AS [sdnEntry_Id], 
+      [vwIDList].[LISTED_BY] AS [LISTED_BY], 
+      [vwIDList].[SDNTYPE] AS [SDNTYPE]
+      FROM [dbo].[vwIDList] AS [vwIDList]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwNationalityList" EntityType="OBLSCREENINGModel.Store.vwNationalityList" store:Type="Views" store:Schema="dbo" store:Name="vwNationalityList">
+            <DefiningQuery>SELECT 
+      [vwNationalityList].[ID] AS [ID], 
+      [vwNationalityList].[country] AS [country], 
+      [vwNationalityList].[mainEntry] AS [mainEntry], 
+      [vwNationalityList].[uid] AS [uid], 
+      [vwNationalityList].[nationalityList_Id] AS [nationalityList_Id], 
+      [vwNationalityList].[sdnEntry_Id] AS [sdnEntry_Id], 
+      [vwNationalityList].[LISTED_BY] AS [LISTED_BY], 
+      [vwNationalityList].[SDNTYPE] AS [SDNTYPE]
+      FROM [dbo].[vwNationalityList] AS [vwNationalityList]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwProgramList" EntityType="OBLSCREENINGModel.Store.vwProgramList" store:Type="Views" store:Schema="dbo" store:Name="vwProgramList">
+            <DefiningQuery>SELECT 
+      [vwProgramList].[ID] AS [ID], 
+      [vwProgramList].[program_Text] AS [program_Text], 
+      [vwProgramList].[programList_Id] AS [programList_Id], 
+      [vwProgramList].[sdnEntry_Id] AS [sdnEntry_Id], 
+      [vwProgramList].[LISTED_BY] AS [LISTED_BY], 
+      [vwProgramList].[SDNTYPE] AS [SDNTYPE]
+      FROM [dbo].[vwProgramList] AS [vwProgramList]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwReferCaseList" EntityType="OBLSCREENINGModel.Store.vwReferCaseList" store:Type="Views" store:Schema="dbo" store:Name="vwReferCaseList">
+            <DefiningQuery>SELECT 
+      [vwReferCaseList].[ID] AS [ID], 
+      [vwReferCaseList].[SEARCHID] AS [SEARCHID], 
+      [vwReferCaseList].[REFERFROM] AS [REFERFROM], 
+      [vwReferCaseList].[REFERTO] AS [REFERTO], 
+      [vwReferCaseList].[REFERDATE] AS [REFERDATE], 
+      [vwReferCaseList].[REFERSTATUS] AS [REFERSTATUS], 
+      [vwReferCaseList].[REFERREMARKS] AS [REFERREMARKS], 
+      [vwReferCaseList].[ISOPEN] AS [ISOPEN], 
+      [vwReferCaseList].[INITIATOR] AS [INITIATOR], 
+      [vwReferCaseList].[INITIATORNAME] AS [INITIATORNAME], 
+      [vwReferCaseList].[RFNAME] AS [RFNAME], 
+      [vwReferCaseList].[RFBRANCHID] AS [RFBRANCHID], 
+      [vwReferCaseList].[RFDESIGNATION] AS [RFDESIGNATION], 
+      [vwReferCaseList].[RFDEPT] AS [RFDEPT], 
+      [vwReferCaseList].[RFEMAIL] AS [RFEMAIL], 
+      [vwReferCaseList].[RTNAME] AS [RTNAME], 
+      [vwReferCaseList].[RTBRANCHID] AS [RTBRANCHID], 
+      [vwReferCaseList].[RTDESIGNATION] AS [RTDESIGNATION], 
+      [vwReferCaseList].[RTDEPT] AS [RTDEPT], 
+      [vwReferCaseList].[RTEMAIL] AS [RTEMAIL], 
+      [vwReferCaseList].[EmpBranchCode] AS [EmpBranchCode], 
+      [vwReferCaseList].[Purpose] AS [Purpose], 
+      [vwReferCaseList].[SearchDate] AS [SearchDate], 
+      [vwReferCaseList].[SearchDetail] AS [SearchDetail], 
+      [vwReferCaseList].[SearchRefNo] AS [SearchRefNo], 
+      [vwReferCaseList].[ACOpenBy] AS [ACOpenBy], 
+      [vwReferCaseList].[LASTREFERSTATUS] AS [LASTREFERSTATUS], 
+      [vwReferCaseList].[REFEROPEN] AS [REFEROPEN], 
+      [vwReferCaseList].[LCRefNo] AS [LCRefNo]
+      FROM [dbo].[vwReferCaseList] AS [vwReferCaseList]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwReferList" EntityType="OBLSCREENINGModel.Store.vwReferList" store:Type="Views" store:Schema="dbo" store:Name="vwReferList">
+            <DefiningQuery>SELECT 
+      [vwReferList].[ID] AS [ID], 
+      [vwReferList].[SEARCHID] AS [SEARCHID], 
+      [vwReferList].[REFERFROM] AS [REFERFROM], 
+      [vwReferList].[REFERTO] AS [REFERTO], 
+      [vwReferList].[REFERDATE] AS [REFERDATE], 
+      [vwReferList].[REFERSTATUS] AS [REFERSTATUS], 
+      [vwReferList].[REFERREMARKS] AS [REFERREMARKS], 
+      [vwReferList].[ISOPEN] AS [ISOPEN], 
+      [vwReferList].[ISACTIVE] AS [ISACTIVE], 
+      [vwReferList].[CREATEDBY] AS [CREATEDBY], 
+      [vwReferList].[CREATEDON] AS [CREATEDON], 
+      [vwReferList].[MODIFIEDBY] AS [MODIFIEDBY], 
+      [vwReferList].[MODIFIEDON] AS [MODIFIEDON], 
+      [vwReferList].[INITIATOR] AS [INITIATOR], 
+      [vwReferList].[INITIATORNAME] AS [INITIATORNAME], 
+      [vwReferList].[RFNAME] AS [RFNAME], 
+      [vwReferList].[RFBRANCHID] AS [RFBRANCHID], 
+      [vwReferList].[RFDESIGNATION] AS [RFDESIGNATION], 
+      [vwReferList].[RFDEPT] AS [RFDEPT], 
+      [vwReferList].[RFEMAIL] AS [RFEMAIL], 
+      [vwReferList].[EmpBranchCode] AS [EmpBranchCode], 
+      [vwReferList].[Purpose] AS [Purpose], 
+      [vwReferList].[SearchDate] AS [SearchDate], 
+      [vwReferList].[SearchDetail] AS [SearchDetail], 
+      [vwReferList].[SearchRefNo] AS [SearchRefNo], 
+      [vwReferList].[ACOpenBy] AS [ACOpenBy], 
+      [vwReferList].[LASTREFERSTATUS] AS [LASTREFERSTATUS], 
+      [vwReferList].[REFEROPEN] AS [REFEROPEN], 
+      [vwReferList].[LCRefNo] AS [LCRefNo]
+      FROM [dbo].[vwReferList] AS [vwReferList]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_OSREFERINFO_OSSearchHistory" Association="OBLSCREENINGModel.Store.FK_OSREFERINFO_OSSearchHistory">
+            <End Role="OSSearchHistory" EntitySet="OSSearchHistory" />
+            <End Role="OSREFERINFO" EntitySet="OSREFERINFO" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="EXISTINGSANCCUSTINFO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CUSTOMER_NO" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CUSTOMER_TYPE" Type="nvarchar" Nullable="false" MaxLength="2" />
+          <Property Name="CUSTOMER_NAME1" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="ADDRESS_LINE1" Type="nvarchar(max)" />
+          <Property Name="ADDRESS_LINE2" Type="nvarchar(max)" />
+          <Property Name="ADDRESS_LINE4" Type="nvarchar(max)" />
+          <Property Name="COUNTRY" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="UNIQUE_ID_NAME" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="UNIQUE_ID_VALUE" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="LOCAL_BRANCH_CODE" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CREATEDBY" Type="nvarchar" MaxLength="50" />
+          <Property Name="CREATEDON" Type="datetime" />
+        </EntityType>
+        <EntityType Name="FILEUPLOADLOG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FileName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FilePath" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FileType" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FileUploadedOn" Type="datetime" Nullable="false" />
+          <Property Name="FileUploadedBy" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="FileTotalTableNo" Type="int" />
+          <Property Name="FileTotalUploadedData" Type="int" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="20" />
+          <Property Name="ModifiedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OSREFERINFO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SEARCHID" Type="bigint" Nullable="false" />
+          <Property Name="REFERFROM" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="REFERTO" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="REFERDATE" Type="datetime" Nullable="false" />
+          <Property Name="REFERSTATUS" Type="int" Nullable="false" />
+          <Property Name="REFERREMARKS" Type="nvarchar(max)" />
+          <Property Name="ISOPEN" Type="bit" Nullable="false" />
+          <Property Name="ISACTIVE" Type="nchar" MaxLength="10" />
+          <Property Name="CREATEDBY" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="CREATEDON" Type="datetime" Nullable="false" />
+          <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="20" />
+          <Property Name="MODIFIEDON" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OSSearchHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="EmpBranchCode" Type="nvarchar" MaxLength="4" />
+          <Property Name="Purpose" Type="nvarchar" MaxLength="50" />
+          <Property Name="SearchDate" Type="datetime" Nullable="false" />
+          <Property Name="SearchCompIP" Type="nvarchar" MaxLength="20" />
+          <Property Name="SearchDetail" Type="nvarchar(max)" />
+          <Property Name="SearchRefNo" Type="nvarchar" MaxLength="20" />
+          <Property Name="IsSuspicious" Type="bit" />
+          <Property Name="ACOpenBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="ReferStatus" Type="int" />
+          <Property Name="IsOpen" Type="bit" />
+          <Property Name="LCRefNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="20" />
+          <Property Name="ModifiedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OSUSER">
+          <Key>
+            <PropertyRef Name="EMPLOYEEID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EMPLOYEEID" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="EMPLOYEENAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="USERTYPE" Type="int" Nullable="false" />
+          <Property Name="TYPEINFO" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="DETAILINFO" Type="nvarchar" MaxLength="103" StoreGeneratedPattern="Computed" />
+          <Property Name="ISACTIVE" Type="bit" Nullable="false" />
+          <Property Name="CREATEDBY" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="CREATEDON" Type="datetime" Nullable="false" />
+          <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="20" />
+          <Property Name="MODIFIEDON" Type="datetime" />
+        </EntityType>
+        <EntityType Name="sdnEntry">
+          <Key>
+            <PropertyRef Name="sdnEntry_Id" />
+          </Key>
+          <Property Name="uid" Type="nvarchar(max)" />
+          <Property Name="firstName" Type="nvarchar(max)" />
+          <Property Name="lastName" Type="nvarchar(max)" />
+          <Property Name="title" Type="nvarchar(max)" />
+          <Property Name="sdnType" Type="nvarchar(max)" />
+          <Property Name="sdnEntry_Id" Type="int" Nullable="false" />
+          <Property Name="remarks" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OBLSCREENING.dbo.SDN_DETAIL_INFO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="SDN_DETAIL_INFO">
+          <Key>
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="SDN_ID" Type="int" />
+          <Property Name="FIRSTNAME" Type="nvarchar(max)" />
+          <Property Name="LASTNAME" Type="nvarchar(max)" />
+          <Property Name="TITLE" Type="nvarchar(max)" />
+          <Property Name="SDNTYPE" Type="nvarchar(max)" />
+          <Property Name="DOB" Type="nvarchar(max)" />
+          <Property Name="POB" Type="nvarchar(max)" />
+          <Property Name="PROGRAM" Type="nvarchar(max)" />
+          <Property Name="NATIONALITY" Type="nvarchar(max)" />
+          <Property Name="CITIZEN" Type="nvarchar(max)" />
+          <Property Name="LISTED_BY" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="COMMENTS" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OBLSCREENING.dbo.SDNLIST' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="SDNLIST">
+          <Key>
+            <PropertyRef Name="PTYPE" />
+            <PropertyRef Name="LISTED_BY" />
+          </Key>
+          <Property Name="ID" Type="bigint" />
+          <Property Name="FIRSTNAME" Type="nvarchar(max)" />
+          <Property Name="LASTNAME" Type="nvarchar(max)" />
+          <Property Name="SDNTYPE" Type="nvarchar(max)" />
+          <Property Name="SDNENTRY_ID" Type="int" />
+          <Property Name="ADDRESS1" Type="nvarchar(max)" />
+          <Property Name="ADDRESS2" Type="nvarchar(max)" />
+          <Property Name="ADDRESS3" Type="nvarchar(max)" />
+          <Property Name="CITY" Type="nvarchar(max)" />
+          <Property Name="POSTALCODE" Type="nvarchar(max)" />
+          <Property Name="COUNTRY" Type="nvarchar(max)" />
+          <Property Name="DOB" Type="nvarchar(max)" />
+          <Property Name="PTYPE" Type="varchar" Nullable="false" MaxLength="9" />
+          <Property Name="LISTED_BY" Type="varchar" Nullable="false" MaxLength="4" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OBLSCREENING.dbo.vwADDRESSList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwADDRESSList">
+          <Key>
+            <PropertyRef Name="addressList_Id" />
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="uid" Type="int" />
+          <Property Name="address1" Type="nvarchar(max)" />
+          <Property Name="address2" Type="nvarchar(max)" />
+          <Property Name="address3" Type="nvarchar(max)" />
+          <Property Name="city" Type="nvarchar(max)" />
+          <Property Name="stateOrProvince" Type="nvarchar(max)" />
+          <Property Name="postalCode" Type="nvarchar(max)" />
+          <Property Name="country" Type="nvarchar(max)" />
+          <Property Name="addressList_Id" Type="int" Nullable="false" />
+          <Property Name="sdnEntry_Id" Type="int" />
+          <Property Name="LISTED_BY" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="SDNTYPE" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OBLSCREENING.dbo.vwAKAList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwAKAList">
+          <Key>
+            <PropertyRef Name="akaList_Id" />
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="uid" Type="nvarchar(max)" />
+          <Property Name="type" Type="nvarchar(max)" />
+          <Property Name="category" Type="nvarchar(max)" />
+          <Property Name="lastName" Type="nvarchar(max)" />
+          <Property Name="firstName" Type="nvarchar(max)" />
+          <Property Name="sdnEntry_Id" Type="int" />
+          <Property Name="akaList_Id" Type="int" Nullable="false" />
+          <Property Name="LISTED_BY" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="SDNTYPE" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OBLSCREENING.dbo.vwCitizenList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwCitizenList">
+          <Key>
+            <PropertyRef Name="citizenshipList_Id" />
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="country" Type="nvarchar(max)" />
+          <Property Name="mainEntry" Type="nvarchar(max)" />
+          <Property Name="citizenshipList_Id" Type="int" Nullable="false" />
+          <Property Name="sdnEntry_Id" Type="int" />
+          <Property Name="LISTED_BY" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="SDNTYPE" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OBLSCREENING.dbo.vwIDList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwIDList">
+          <Key>
+            <PropertyRef Name="idList_Id" />
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="idType" Type="nvarchar(max)" />
+          <Property Name="idNumber" Type="nvarchar(max)" />
+          <Property Name="idCountry" Type="nvarchar(max)" />
+          <Property Name="idList_Id" Type="int" Nullable="false" />
+          <Property Name="sdnEntry_Id" Type="int" />
+          <Property Name="LISTED_BY" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="SDNTYPE" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OBLSCREENING.dbo.vwNationalityList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwNationalityList">
+          <Key>
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="country" Type="nvarchar(max)" />
+          <Property Name="mainEntry" Type="nvarchar(max)" />
+          <Property Name="uid" Type="nvarchar(max)" />
+          <Property Name="nationalityList_Id" Type="int" />
+          <Property Name="sdnEntry_Id" Type="int" />
+          <Property Name="LISTED_BY" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="SDNTYPE" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OBLSCREENING.dbo.vwProgramList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwProgramList">
+          <Key>
+            <PropertyRef Name="programList_Id" />
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="program_Text" Type="nvarchar(max)" />
+          <Property Name="programList_Id" Type="int" Nullable="false" />
+          <Property Name="sdnEntry_Id" Type="int" />
+          <Property Name="LISTED_BY" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="SDNTYPE" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OBLSCREENING.dbo.vwReferCaseList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwReferCaseList">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="SEARCHID" />
+            <PropertyRef Name="REFERFROM" />
+            <PropertyRef Name="REFERTO" />
+            <PropertyRef Name="REFERDATE" />
+            <PropertyRef Name="REFERSTATUS" />
+            <PropertyRef Name="ISOPEN" />
+            <PropertyRef Name="INITIATOR" />
+            <PropertyRef Name="INITIATORNAME" />
+            <PropertyRef Name="RFNAME" />
+            <PropertyRef Name="RFBRANCHID" />
+            <PropertyRef Name="RFDESIGNATION" />
+            <PropertyRef Name="RFDEPT" />
+            <PropertyRef Name="RTNAME" />
+            <PropertyRef Name="RTBRANCHID" />
+            <PropertyRef Name="RTDESIGNATION" />
+            <PropertyRef Name="RTDEPT" />
+            <PropertyRef Name="SearchDate" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="SEARCHID" Type="bigint" Nullable="false" />
+          <Property Name="REFERFROM" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="REFERTO" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="REFERDATE" Type="datetime" Nullable="false" />
+          <Property Name="REFERSTATUS" Type="int" Nullable="false" />
+          <Property Name="REFERREMARKS" Type="nvarchar(max)" />
+          <Property Name="ISOPEN" Type="bit" Nullable="false" />
+          <Property Name="INITIATOR" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="INITIATORNAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RFNAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RFBRANCHID" Type="int" Nullable="false" />
+          <Property Name="RFDESIGNATION" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RFDEPT" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RFEMAIL" Type="nvarchar" MaxLength="100" />
+          <Property Name="RTNAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RTBRANCHID" Type="int" Nullable="false" />
+          <Property Name="RTDESIGNATION" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RTDEPT" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RTEMAIL" Type="nvarchar" MaxLength="100" />
+          <Property Name="EmpBranchCode" Type="nvarchar" MaxLength="4" />
+          <Property Name="Purpose" Type="nvarchar" MaxLength="50" />
+          <Property Name="SearchDate" Type="datetime" Nullable="false" />
+          <Property Name="SearchDetail" Type="nvarchar(max)" />
+          <Property Name="SearchRefNo" Type="nvarchar" MaxLength="20" />
+          <Property Name="ACOpenBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="LASTREFERSTATUS" Type="int" />
+          <Property Name="REFEROPEN" Type="bit" />
+          <Property Name="LCRefNo" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OBLSCREENING.dbo.vwReferList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vwReferList">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="SEARCHID" />
+            <PropertyRef Name="REFERFROM" />
+            <PropertyRef Name="REFERTO" />
+            <PropertyRef Name="REFERDATE" />
+            <PropertyRef Name="REFERSTATUS" />
+            <PropertyRef Name="ISOPEN" />
+            <PropertyRef Name="CREATEDBY" />
+            <PropertyRef Name="CREATEDON" />
+            <PropertyRef Name="INITIATOR" />
+            <PropertyRef Name="INITIATORNAME" />
+            <PropertyRef Name="RFNAME" />
+            <PropertyRef Name="RFBRANCHID" />
+            <PropertyRef Name="RFDESIGNATION" />
+            <PropertyRef Name="RFDEPT" />
+            <PropertyRef Name="SearchDate" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="SEARCHID" Type="bigint" Nullable="false" />
+          <Property Name="REFERFROM" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="REFERTO" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="REFERDATE" Type="datetime" Nullable="false" />
+          <Property Name="REFERSTATUS" Type="int" Nullable="false" />
+          <Property Name="REFERREMARKS" Type="nvarchar(max)" />
+          <Property Name="ISOPEN" Type="bit" Nullable="false" />
+          <Property Name="ISACTIVE" Type="nchar" MaxLength="10" />
+          <Property Name="CREATEDBY" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="CREATEDON" Type="datetime" Nullable="false" />
+          <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="20" />
+          <Property Name="MODIFIEDON" Type="datetime" />
+          <Property Name="INITIATOR" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="INITIATORNAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RFNAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RFBRANCHID" Type="int" Nullable="false" />
+          <Property Name="RFDESIGNATION" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RFDEPT" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="RFEMAIL" Type="nvarchar" MaxLength="100" />
+          <Property Name="EmpBranchCode" Type="nvarchar" MaxLength="4" />
+          <Property Name="Purpose" Type="nvarchar" MaxLength="50" />
+          <Property Name="SearchDate" Type="datetime" Nullable="false" />
+          <Property Name="SearchDetail" Type="nvarchar(max)" />
+          <Property Name="SearchRefNo" Type="nvarchar" MaxLength="20" />
+          <Property Name="ACOpenBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="LASTREFERSTATUS" Type="int" />
+          <Property Name="REFEROPEN" Type="bit" />
+          <Property Name="LCRefNo" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_OSREFERINFO_OSSearchHistory">
+          <End Role="OSSearchHistory" Type="OBLSCREENINGModel.Store.OSSearchHistory" Multiplicity="1" />
+          <End Role="OSREFERINFO" Type="OBLSCREENINGModel.Store.OSREFERINFO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OSSearchHistory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OSREFERINFO">
+              <PropertyRef Name="SEARCHID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="SEARCHLIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NAME" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="ADDRESS" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="COUNTRY" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="DOB" Type="nvarchar" Mode="In" />
+          <Parameter Name="PERCANTAGE" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OBLSCREENINGModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="OBLSCREENINGEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="EXISTINGSANCCUSTINFOes" EntityType="OBLSCREENINGModel.EXISTINGSANCCUSTINFO" />
+          <EntitySet Name="FILEUPLOADLOGs" EntityType="OBLSCREENINGModel.FILEUPLOADLOG" />
+          <EntitySet Name="sdnEntries" EntityType="OBLSCREENINGModel.sdnEntry" />
+          <FunctionImport Name="SEARCHLIST" ReturnType="Collection(OBLSCREENINGModel.SEARCHLIST_Result)">
+            <Parameter Name="NAME" Mode="In" Type="String" />
+            <Parameter Name="ADDRESS" Mode="In" Type="String" />
+            <Parameter Name="COUNTRY" Mode="In" Type="String" />
+            <Parameter Name="DOB" Mode="In" Type="String" />
+            <Parameter Name="PERCANTAGE" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="SDNLISTs" EntityType="OBLSCREENINGModel.SDNLIST" />
+          <EntitySet Name="SDN_DETAIL_INFO" EntityType="OBLSCREENINGModel.SDN_DETAIL_INFO" />
+          <EntitySet Name="vwAKALists" EntityType="OBLSCREENINGModel.vwAKAList" />
+          <EntitySet Name="vwCitizenLists" EntityType="OBLSCREENINGModel.vwCitizenList" />
+          <EntitySet Name="vwIDLists" EntityType="OBLSCREENINGModel.vwIDList" />
+          <EntitySet Name="vwNationalityLists" EntityType="OBLSCREENINGModel.vwNationalityList" />
+          <EntitySet Name="vwProgramLists" EntityType="OBLSCREENINGModel.vwProgramList" />
+          <EntitySet Name="vwADDRESSLists" EntityType="OBLSCREENINGModel.vwADDRESSList" />
+          <EntitySet Name="OSUSERs" EntityType="OBLSCREENINGModel.OSUSER" />
+          <EntitySet Name="OSSearchHistories" EntityType="OBLSCREENINGModel.OSSearchHistory" />
+          <EntitySet Name="OSREFERINFOes" EntityType="OBLSCREENINGModel.OSREFERINFO" />
+          <AssociationSet Name="FK_OSREFERINFO_OSSearchHistory" Association="OBLSCREENINGModel.FK_OSREFERINFO_OSSearchHistory">
+            <End Role="OSSearchHistory" EntitySet="OSSearchHistories" />
+            <End Role="OSREFERINFO" EntitySet="OSREFERINFOes" />
+          </AssociationSet>
+          <EntitySet Name="vwReferCaseLists" EntityType="OBLSCREENINGModel.vwReferCaseList" />
+          <EntitySet Name="vwReferLists" EntityType="OBLSCREENINGModel.vwReferList" />
+          </EntityContainer>
+        <EntityType Name="EXISTINGSANCCUSTINFO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="CUSTOMER_NO" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CUSTOMER_TYPE" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CUSTOMER_NAME1" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ADDRESS_LINE1" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ADDRESS_LINE2" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ADDRESS_LINE4" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COUNTRY" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UNIQUE_ID_NAME" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UNIQUE_ID_VALUE" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LOCAL_BRANCH_CODE" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CREATEDBY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATEDON" />
+        </EntityType>
+        <EntityType Name="FILEUPLOADLOG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FileName" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FilePath" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FileType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="FileUploadedOn" Nullable="false" />
+          <Property Type="String" Name="FileUploadedBy" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="FileTotalTableNo" />
+          <Property Type="Int32" Name="FileTotalUploadedData" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedOn" Nullable="false" />
+          <Property Type="String" Name="ModifiedBy" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ModifiedOn" />
+        </EntityType>
+        <EntityType Name="sdnEntry">
+          <Key>
+            <PropertyRef Name="sdnEntry_Id" />
+          </Key>
+          <Property Type="String" Name="uid" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="firstName" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="lastName" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="sdnType" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="sdnEntry_Id" Nullable="false" />
+          <Property Type="String" Name="remarks" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="SEARCHLIST_Result">
+          <Property Type="Int32" Name="SDNENTRY_ID" Nullable="true" />
+          <Property Type="String" Name="NAME" Nullable="true" />
+          <Property Type="String" Name="ADDRESS" Nullable="true" />
+          <Property Type="String" Name="SDNTYPE" Nullable="true" />
+          <Property Type="String" Name="PTYPE" Nullable="false" MaxLength="9" />
+          <Property Type="String" Name="COUNTRY" Nullable="true" />
+          <Property Type="String" Name="LISTED_BY" Nullable="false" MaxLength="4" />
+          <Property Type="String" Name="DOB" Nullable="true" />
+          <Property Type="Decimal" Name="MATCHING_PERCENTAGE" Nullable="true" Precision="18" Scale="2" />
+        </ComplexType>
+        <EntityType Name="SDNLIST">
+          <Key>
+            <PropertyRef Name="PTYPE" />
+            <PropertyRef Name="LISTED_BY" />
+          </Key>
+          <Property Type="Int64" Name="ID" />
+          <Property Type="String" Name="FIRSTNAME" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LASTNAME" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SDNTYPE" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SDNENTRY_ID" />
+          <Property Type="String" Name="ADDRESS1" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ADDRESS2" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ADDRESS3" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CITY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="POSTALCODE" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="COUNTRY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DOB" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PTYPE" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LISTED_BY" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SDN_DETAIL_INFO">
+          <Key>
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="SDN_ID" />
+          <Property Type="String" Name="FIRSTNAME" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LASTNAME" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TITLE" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SDNTYPE" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DOB" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="POB" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PROGRAM" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NATIONALITY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CITIZEN" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LISTED_BY" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="COMMENTS" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="vwAKAList">
+          <Key>
+            <PropertyRef Name="akaList_Id" />
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="uid" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="type" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="category" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="lastName" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="firstName" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="sdnEntry_Id" />
+          <Property Type="Int32" Name="akaList_Id" Nullable="false" />
+          <Property Type="String" Name="LISTED_BY" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SDNTYPE" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="vwCitizenList">
+          <Key>
+            <PropertyRef Name="citizenshipList_Id" />
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="country" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="mainEntry" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="citizenshipList_Id" Nullable="false" />
+          <Property Type="Int32" Name="sdnEntry_Id" />
+          <Property Type="String" Name="LISTED_BY" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SDNTYPE" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="vwIDList">
+          <Key>
+            <PropertyRef Name="idList_Id" />
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="idType" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="idNumber" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="idCountry" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="idList_Id" Nullable="false" />
+          <Property Type="Int32" Name="sdnEntry_Id" />
+          <Property Type="String" Name="LISTED_BY" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SDNTYPE" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="vwNationalityList">
+          <Key>
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="country" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="mainEntry" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="uid" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="nationalityList_Id" />
+          <Property Type="Int32" Name="sdnEntry_Id" />
+          <Property Type="String" Name="LISTED_BY" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SDNTYPE" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="vwProgramList">
+          <Key>
+            <PropertyRef Name="programList_Id" />
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="program_Text" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="programList_Id" Nullable="false" />
+          <Property Type="Int32" Name="sdnEntry_Id" />
+          <Property Type="String" Name="LISTED_BY" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SDNTYPE" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="vwADDRESSList">
+          <Key>
+            <PropertyRef Name="addressList_Id" />
+            <PropertyRef Name="LISTED_BY" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="uid" />
+          <Property Type="String" Name="address1" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="address2" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="address3" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="city" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="stateOrProvince" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="postalCode" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="country" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="addressList_Id" Nullable="false" />
+          <Property Type="Int32" Name="sdnEntry_Id" />
+          <Property Type="String" Name="LISTED_BY" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SDNTYPE" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="OSUSER">
+          <Key>
+            <PropertyRef Name="EMPLOYEEID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="EMPLOYEEID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EMPLOYEENAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="USERTYPE" Nullable="false" />
+          <Property Type="String" Name="TYPEINFO" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EMAIL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DETAILINFO" MaxLength="103" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Type="Boolean" Name="ISACTIVE" Nullable="false" />
+          <Property Type="String" Name="CREATEDBY" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATEDON" Nullable="false" />
+          <Property Type="String" Name="MODIFIEDBY" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIEDON" />
+        </EntityType>
+        <EntityType Name="OSSearchHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="EmployeeID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmpBranchCode" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Purpose" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SearchDate" Nullable="false" />
+          <Property Type="String" Name="SearchCompIP" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SearchDetail" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SearchRefNo" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsSuspicious" />
+          <Property Type="String" Name="ACOpenBy" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ReferStatus" />
+          <Property Type="Boolean" Name="IsOpen" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedOn" Nullable="false" />
+          <Property Type="String" Name="ModifiedBy" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ModifiedOn" />
+          <NavigationProperty Name="OSREFERINFOes" Relationship="OBLSCREENINGModel.FK_OSREFERINFO_OSSearchHistory" FromRole="OSSearchHistory" ToRole="OSREFERINFO" />
+          <Property Type="String" Name="LCRefNo" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="OSREFERINFO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="SEARCHID" Nullable="false" />
+          <Property Type="String" Name="REFERFROM" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REFERTO" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="REFERDATE" Nullable="false" />
+          <Property Type="Int32" Name="REFERSTATUS" Nullable="false" />
+          <Property Type="String" Name="REFERREMARKS" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="ISOPEN" Nullable="false" />
+          <Property Type="String" Name="ISACTIVE" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="CREATEDBY" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATEDON" Nullable="false" />
+          <Property Type="String" Name="MODIFIEDBY" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIEDON" />
+          <NavigationProperty Name="OSSearchHistory" Relationship="OBLSCREENINGModel.FK_OSREFERINFO_OSSearchHistory" FromRole="OSREFERINFO" ToRole="OSSearchHistory" />
+        </EntityType>
+        <Association Name="FK_OSREFERINFO_OSSearchHistory">
+          <End Type="OBLSCREENINGModel.OSSearchHistory" Role="OSSearchHistory" Multiplicity="1" />
+          <End Type="OBLSCREENINGModel.OSREFERINFO" Role="OSREFERINFO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OSSearchHistory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OSREFERINFO">
+              <PropertyRef Name="SEARCHID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="vwReferCaseList">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="SEARCHID" />
+            <PropertyRef Name="REFERFROM" />
+            <PropertyRef Name="REFERTO" />
+            <PropertyRef Name="REFERDATE" />
+            <PropertyRef Name="REFERSTATUS" />
+            <PropertyRef Name="ISOPEN" />
+            <PropertyRef Name="INITIATOR" />
+            <PropertyRef Name="INITIATORNAME" />
+            <PropertyRef Name="RFNAME" />
+            <PropertyRef Name="RFBRANCHID" />
+            <PropertyRef Name="RFDESIGNATION" />
+            <PropertyRef Name="RFDEPT" />
+            <PropertyRef Name="RTNAME" />
+            <PropertyRef Name="RTBRANCHID" />
+            <PropertyRef Name="RTDESIGNATION" />
+            <PropertyRef Name="RTDEPT" />
+            <PropertyRef Name="SearchDate" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="Int64" Name="SEARCHID" Nullable="false" />
+          <Property Type="String" Name="REFERFROM" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REFERTO" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="REFERDATE" Nullable="false" />
+          <Property Type="Int32" Name="REFERSTATUS" Nullable="false" />
+          <Property Type="String" Name="REFERREMARKS" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="ISOPEN" Nullable="false" />
+          <Property Type="String" Name="INITIATOR" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="INITIATORNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RFNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="RFBRANCHID" Nullable="false" />
+          <Property Type="String" Name="RFDESIGNATION" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RFDEPT" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RFEMAIL" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RTNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="RTBRANCHID" Nullable="false" />
+          <Property Type="String" Name="RTDESIGNATION" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RTDEPT" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RTEMAIL" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmpBranchCode" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Purpose" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SearchDate" Nullable="false" />
+          <Property Type="String" Name="SearchDetail" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SearchRefNo" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACOpenBy" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="LASTREFERSTATUS" />
+          <Property Type="Boolean" Name="REFEROPEN" />
+          <Property Type="String" Name="LCRefNo" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="vwReferList">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="SEARCHID" />
+            <PropertyRef Name="REFERFROM" />
+            <PropertyRef Name="REFERTO" />
+            <PropertyRef Name="REFERDATE" />
+            <PropertyRef Name="REFERSTATUS" />
+            <PropertyRef Name="ISOPEN" />
+            <PropertyRef Name="CREATEDBY" />
+            <PropertyRef Name="CREATEDON" />
+            <PropertyRef Name="INITIATOR" />
+            <PropertyRef Name="INITIATORNAME" />
+            <PropertyRef Name="RFNAME" />
+            <PropertyRef Name="RFBRANCHID" />
+            <PropertyRef Name="RFDESIGNATION" />
+            <PropertyRef Name="RFDEPT" />
+            <PropertyRef Name="SearchDate" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="Int64" Name="SEARCHID" Nullable="false" />
+          <Property Type="String" Name="REFERFROM" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REFERTO" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="REFERDATE" Nullable="false" />
+          <Property Type="Int32" Name="REFERSTATUS" Nullable="false" />
+          <Property Type="String" Name="REFERREMARKS" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="ISOPEN" Nullable="false" />
+          <Property Type="String" Name="ISACTIVE" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="CREATEDBY" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATEDON" Nullable="false" />
+          <Property Type="String" Name="MODIFIEDBY" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MODIFIEDON" />
+          <Property Type="String" Name="INITIATOR" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="INITIATORNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RFNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="RFBRANCHID" Nullable="false" />
+          <Property Type="String" Name="RFDESIGNATION" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RFDEPT" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RFEMAIL" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmpBranchCode" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Purpose" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SearchDate" Nullable="false" />
+          <Property Type="String" Name="SearchDetail" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SearchRefNo" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ACOpenBy" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="LASTREFERSTATUS" />
+          <Property Type="Boolean" Name="REFEROPEN" />
+          <Property Type="String" Name="LCRefNo" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OBLSCREENINGModelStoreContainer" CdmEntityContainer="OBLSCREENINGEntities" >
+          <EntitySetMapping Name="EXISTINGSANCCUSTINFOes">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.EXISTINGSANCCUSTINFO">
+              <MappingFragment StoreEntitySet="EXISTINGSANCCUSTINFO">
+                <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+                <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+                <ScalarProperty Name="LOCAL_BRANCH_CODE" ColumnName="LOCAL_BRANCH_CODE" />
+                <ScalarProperty Name="UNIQUE_ID_VALUE" ColumnName="UNIQUE_ID_VALUE" />
+                <ScalarProperty Name="UNIQUE_ID_NAME" ColumnName="UNIQUE_ID_NAME" />
+                <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+                <ScalarProperty Name="ADDRESS_LINE4" ColumnName="ADDRESS_LINE4" />
+                <ScalarProperty Name="ADDRESS_LINE2" ColumnName="ADDRESS_LINE2" />
+                <ScalarProperty Name="ADDRESS_LINE1" ColumnName="ADDRESS_LINE1" />
+                <ScalarProperty Name="CUSTOMER_NAME1" ColumnName="CUSTOMER_NAME1" />
+                <ScalarProperty Name="CUSTOMER_TYPE" ColumnName="CUSTOMER_TYPE" />
+                <ScalarProperty Name="CUSTOMER_NO" ColumnName="CUSTOMER_NO" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FILEUPLOADLOGs">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.FILEUPLOADLOG">
+              <MappingFragment StoreEntitySet="FILEUPLOADLOG">
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="FileTotalUploadedData" ColumnName="FileTotalUploadedData" />
+                <ScalarProperty Name="FileTotalTableNo" ColumnName="FileTotalTableNo" />
+                <ScalarProperty Name="FileUploadedBy" ColumnName="FileUploadedBy" />
+                <ScalarProperty Name="FileUploadedOn" ColumnName="FileUploadedOn" />
+                <ScalarProperty Name="FileType" ColumnName="FileType" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sdnEntries">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.sdnEntry">
+              <MappingFragment StoreEntitySet="sdnEntry">
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+                <ScalarProperty Name="sdnEntry_Id" ColumnName="sdnEntry_Id" />
+                <ScalarProperty Name="sdnType" ColumnName="sdnType" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SEARCHLIST" FunctionName="OBLSCREENINGModel.Store.SEARCHLIST">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="OBLSCREENINGModel.SEARCHLIST_Result">
+                <ScalarProperty Name="SDNENTRY_ID" ColumnName="SDNENTRY_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="SDNTYPE" ColumnName="SDNTYPE" />
+                <ScalarProperty Name="PTYPE" ColumnName="PTYPE" />
+                <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+                <ScalarProperty Name="LISTED_BY" ColumnName="LISTED_BY" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="MATCHING_PERCENTAGE" ColumnName="MATCHING_PERCENTAGE" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="SDNLISTs">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.SDNLIST">
+              <MappingFragment StoreEntitySet="SDNLIST">
+                <ScalarProperty Name="LISTED_BY" ColumnName="LISTED_BY" />
+                <ScalarProperty Name="PTYPE" ColumnName="PTYPE" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+                <ScalarProperty Name="POSTALCODE" ColumnName="POSTALCODE" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+                <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+                <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+                <ScalarProperty Name="SDNENTRY_ID" ColumnName="SDNENTRY_ID" />
+                <ScalarProperty Name="SDNTYPE" ColumnName="SDNTYPE" />
+                <ScalarProperty Name="LASTNAME" ColumnName="LASTNAME" />
+                <ScalarProperty Name="FIRSTNAME" ColumnName="FIRSTNAME" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SDN_DETAIL_INFO">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.SDN_DETAIL_INFO">
+              <MappingFragment StoreEntitySet="SDN_DETAIL_INFO">
+                <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+                <ScalarProperty Name="LISTED_BY" ColumnName="LISTED_BY" />
+                <ScalarProperty Name="CITIZEN" ColumnName="CITIZEN" />
+                <ScalarProperty Name="NATIONALITY" ColumnName="NATIONALITY" />
+                <ScalarProperty Name="PROGRAM" ColumnName="PROGRAM" />
+                <ScalarProperty Name="POB" ColumnName="POB" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="SDNTYPE" ColumnName="SDNTYPE" />
+                <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+                <ScalarProperty Name="LASTNAME" ColumnName="LASTNAME" />
+                <ScalarProperty Name="FIRSTNAME" ColumnName="FIRSTNAME" />
+                <ScalarProperty Name="SDN_ID" ColumnName="SDN_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vwAKALists">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.vwAKAList">
+              <MappingFragment StoreEntitySet="vwAKAList">
+                <ScalarProperty Name="SDNTYPE" ColumnName="SDNTYPE" />
+                <ScalarProperty Name="LISTED_BY" ColumnName="LISTED_BY" />
+                <ScalarProperty Name="akaList_Id" ColumnName="akaList_Id" />
+                <ScalarProperty Name="sdnEntry_Id" ColumnName="sdnEntry_Id" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vwCitizenLists">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.vwCitizenList">
+              <MappingFragment StoreEntitySet="vwCitizenList">
+                <ScalarProperty Name="SDNTYPE" ColumnName="SDNTYPE" />
+                <ScalarProperty Name="LISTED_BY" ColumnName="LISTED_BY" />
+                <ScalarProperty Name="sdnEntry_Id" ColumnName="sdnEntry_Id" />
+                <ScalarProperty Name="citizenshipList_Id" ColumnName="citizenshipList_Id" />
+                <ScalarProperty Name="mainEntry" ColumnName="mainEntry" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vwIDLists">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.vwIDList">
+              <MappingFragment StoreEntitySet="vwIDList">
+                <ScalarProperty Name="SDNTYPE" ColumnName="SDNTYPE" />
+                <ScalarProperty Name="LISTED_BY" ColumnName="LISTED_BY" />
+                <ScalarProperty Name="sdnEntry_Id" ColumnName="sdnEntry_Id" />
+                <ScalarProperty Name="idList_Id" ColumnName="idList_Id" />
+                <ScalarProperty Name="idCountry" ColumnName="idCountry" />
+                <ScalarProperty Name="idNumber" ColumnName="idNumber" />
+                <ScalarProperty Name="idType" ColumnName="idType" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vwNationalityLists">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.vwNationalityList">
+              <MappingFragment StoreEntitySet="vwNationalityList">
+                <ScalarProperty Name="SDNTYPE" ColumnName="SDNTYPE" />
+                <ScalarProperty Name="LISTED_BY" ColumnName="LISTED_BY" />
+                <ScalarProperty Name="sdnEntry_Id" ColumnName="sdnEntry_Id" />
+                <ScalarProperty Name="nationalityList_Id" ColumnName="nationalityList_Id" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="mainEntry" ColumnName="mainEntry" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vwProgramLists">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.vwProgramList">
+              <MappingFragment StoreEntitySet="vwProgramList">
+                <ScalarProperty Name="SDNTYPE" ColumnName="SDNTYPE" />
+                <ScalarProperty Name="LISTED_BY" ColumnName="LISTED_BY" />
+                <ScalarProperty Name="sdnEntry_Id" ColumnName="sdnEntry_Id" />
+                <ScalarProperty Name="programList_Id" ColumnName="programList_Id" />
+                <ScalarProperty Name="program_Text" ColumnName="program_Text" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vwADDRESSLists">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.vwADDRESSList">
+              <MappingFragment StoreEntitySet="vwADDRESSList">
+                <ScalarProperty Name="SDNTYPE" ColumnName="SDNTYPE" />
+                <ScalarProperty Name="LISTED_BY" ColumnName="LISTED_BY" />
+                <ScalarProperty Name="sdnEntry_Id" ColumnName="sdnEntry_Id" />
+                <ScalarProperty Name="addressList_Id" ColumnName="addressList_Id" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+                <ScalarProperty Name="stateOrProvince" ColumnName="stateOrProvince" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="address3" ColumnName="address3" />
+                <ScalarProperty Name="address2" ColumnName="address2" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OSUSERs">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.OSUSER">
+              <MappingFragment StoreEntitySet="OSUSER">
+                <ScalarProperty Name="MODIFIEDON" ColumnName="MODIFIEDON" />
+                <ScalarProperty Name="MODIFIEDBY" ColumnName="MODIFIEDBY" />
+                <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+                <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+                <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+                <ScalarProperty Name="DETAILINFO" ColumnName="DETAILINFO" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="TYPEINFO" ColumnName="TYPEINFO" />
+                <ScalarProperty Name="USERTYPE" ColumnName="USERTYPE" />
+                <ScalarProperty Name="EMPLOYEENAME" ColumnName="EMPLOYEENAME" />
+                <ScalarProperty Name="EMPLOYEEID" ColumnName="EMPLOYEEID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OSSearchHistories">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.OSSearchHistory">
+              <MappingFragment StoreEntitySet="OSSearchHistory">
+                <ScalarProperty Name="LCRefNo" ColumnName="LCRefNo" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsOpen" ColumnName="IsOpen" />
+                <ScalarProperty Name="ReferStatus" ColumnName="ReferStatus" />
+                <ScalarProperty Name="ACOpenBy" ColumnName="ACOpenBy" />
+                <ScalarProperty Name="IsSuspicious" ColumnName="IsSuspicious" />
+                <ScalarProperty Name="SearchRefNo" ColumnName="SearchRefNo" />
+                <ScalarProperty Name="SearchDetail" ColumnName="SearchDetail" />
+                <ScalarProperty Name="SearchCompIP" ColumnName="SearchCompIP" />
+                <ScalarProperty Name="SearchDate" ColumnName="SearchDate" />
+                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+                <ScalarProperty Name="EmpBranchCode" ColumnName="EmpBranchCode" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OSREFERINFOes">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.OSREFERINFO">
+              <MappingFragment StoreEntitySet="OSREFERINFO">
+                <ScalarProperty Name="MODIFIEDON" ColumnName="MODIFIEDON" />
+                <ScalarProperty Name="MODIFIEDBY" ColumnName="MODIFIEDBY" />
+                <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+                <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+                <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+                <ScalarProperty Name="ISOPEN" ColumnName="ISOPEN" />
+                <ScalarProperty Name="REFERREMARKS" ColumnName="REFERREMARKS" />
+                <ScalarProperty Name="REFERSTATUS" ColumnName="REFERSTATUS" />
+                <ScalarProperty Name="REFERDATE" ColumnName="REFERDATE" />
+                <ScalarProperty Name="REFERTO" ColumnName="REFERTO" />
+                <ScalarProperty Name="REFERFROM" ColumnName="REFERFROM" />
+                <ScalarProperty Name="SEARCHID" ColumnName="SEARCHID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vwReferCaseLists">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.vwReferCaseList">
+              <MappingFragment StoreEntitySet="vwReferCaseList">
+                <ScalarProperty Name="LCRefNo" ColumnName="LCRefNo" />
+                <ScalarProperty Name="REFEROPEN" ColumnName="REFEROPEN" />
+                <ScalarProperty Name="LASTREFERSTATUS" ColumnName="LASTREFERSTATUS" />
+                <ScalarProperty Name="ACOpenBy" ColumnName="ACOpenBy" />
+                <ScalarProperty Name="SearchRefNo" ColumnName="SearchRefNo" />
+                <ScalarProperty Name="SearchDetail" ColumnName="SearchDetail" />
+                <ScalarProperty Name="SearchDate" ColumnName="SearchDate" />
+                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+                <ScalarProperty Name="EmpBranchCode" ColumnName="EmpBranchCode" />
+                <ScalarProperty Name="RTEMAIL" ColumnName="RTEMAIL" />
+                <ScalarProperty Name="RTDEPT" ColumnName="RTDEPT" />
+                <ScalarProperty Name="RTDESIGNATION" ColumnName="RTDESIGNATION" />
+                <ScalarProperty Name="RTBRANCHID" ColumnName="RTBRANCHID" />
+                <ScalarProperty Name="RTNAME" ColumnName="RTNAME" />
+                <ScalarProperty Name="RFEMAIL" ColumnName="RFEMAIL" />
+                <ScalarProperty Name="RFDEPT" ColumnName="RFDEPT" />
+                <ScalarProperty Name="RFDESIGNATION" ColumnName="RFDESIGNATION" />
+                <ScalarProperty Name="RFBRANCHID" ColumnName="RFBRANCHID" />
+                <ScalarProperty Name="RFNAME" ColumnName="RFNAME" />
+                <ScalarProperty Name="INITIATORNAME" ColumnName="INITIATORNAME" />
+                <ScalarProperty Name="INITIATOR" ColumnName="INITIATOR" />
+                <ScalarProperty Name="ISOPEN" ColumnName="ISOPEN" />
+                <ScalarProperty Name="REFERREMARKS" ColumnName="REFERREMARKS" />
+                <ScalarProperty Name="REFERSTATUS" ColumnName="REFERSTATUS" />
+                <ScalarProperty Name="REFERDATE" ColumnName="REFERDATE" />
+                <ScalarProperty Name="REFERTO" ColumnName="REFERTO" />
+                <ScalarProperty Name="REFERFROM" ColumnName="REFERFROM" />
+                <ScalarProperty Name="SEARCHID" ColumnName="SEARCHID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vwReferLists">
+            <EntityTypeMapping TypeName="OBLSCREENINGModel.vwReferList">
+              <MappingFragment StoreEntitySet="vwReferList">
+                <ScalarProperty Name="LCRefNo" ColumnName="LCRefNo" />
+                <ScalarProperty Name="REFEROPEN" ColumnName="REFEROPEN" />
+                <ScalarProperty Name="LASTREFERSTATUS" ColumnName="LASTREFERSTATUS" />
+                <ScalarProperty Name="ACOpenBy" ColumnName="ACOpenBy" />
+                <ScalarProperty Name="SearchRefNo" ColumnName="SearchRefNo" />
+                <ScalarProperty Name="SearchDetail" ColumnName="SearchDetail" />
+                <ScalarProperty Name="SearchDate" ColumnName="SearchDate" />
+                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+                <ScalarProperty Name="EmpBranchCode" ColumnName="EmpBranchCode" />
+                <ScalarProperty Name="RFEMAIL" ColumnName="RFEMAIL" />
+                <ScalarProperty Name="RFDEPT" ColumnName="RFDEPT" />
+                <ScalarProperty Name="RFDESIGNATION" ColumnName="RFDESIGNATION" />
+                <ScalarProperty Name="RFBRANCHID" ColumnName="RFBRANCHID" />
+                <ScalarProperty Name="RFNAME" ColumnName="RFNAME" />
+                <ScalarProperty Name="INITIATORNAME" ColumnName="INITIATORNAME" />
+                <ScalarProperty Name="INITIATOR" ColumnName="INITIATOR" />
+                <ScalarProperty Name="MODIFIEDON" ColumnName="MODIFIEDON" />
+                <ScalarProperty Name="MODIFIEDBY" ColumnName="MODIFIEDBY" />
+                <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+                <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+                <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+                <ScalarProperty Name="ISOPEN" ColumnName="ISOPEN" />
+                <ScalarProperty Name="REFERREMARKS" ColumnName="REFERREMARKS" />
+                <ScalarProperty Name="REFERSTATUS" ColumnName="REFERSTATUS" />
+                <ScalarProperty Name="REFERDATE" ColumnName="REFERDATE" />
+                <ScalarProperty Name="REFERTO" ColumnName="REFERTO" />
+                <ScalarProperty Name="REFERFROM" ColumnName="REFERFROM" />
+                <ScalarProperty Name="SEARCHID" ColumnName="SEARCHID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="OBLSCREENINGEntity" ZoomLevel="60" >
+        <EntityTypeShape EntityType="OBLSCREENINGModel.EXISTINGSANCCUSTINFO" Width="1.5" PointX="9.375" PointY="9.75" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.FILEUPLOADLOG" Width="1.5" PointX="11.375" PointY="0.75" Height="3.3263964843750031" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.sdnEntry" Width="1.5" PointX="0.75" PointY="0.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.SDNLIST" Width="1.5" PointX="0.75" PointY="4.75" Height="3.7109993489583388" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.SDN_DETAIL_INFO" Width="1.5" PointX="3.75" PointY="0.75" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.vwAKAList" Width="1.5" PointX="7.75" PointY="0.75" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.vwCitizenList" Width="1.5" PointX="7.75" PointY="4.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.vwIDList" Width="1.5" PointX="0.75" PointY="9.75" Height="2.5571907552083246" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.vwNationalityList" Width="1.5" PointX="2.75" PointY="9.75" Height="2.5571907552083246" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.vwProgramList" Width="1.5" PointX="9.75" PointY="5.75" Height="2.1725878906250102" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.vwADDRESSList" Width="1.5" PointX="11.375" PointY="8.75" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.OSUSER" Width="1.5" PointX="13.375" PointY="1" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.OSSearchHistory" Width="1.5" PointX="5.375" PointY="9" Height="4.4802050781250031" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.OSREFERINFO" Width="1.5" PointX="7.625" PointY="14.375" Height="3.7109993489583388" />
+        <AssociationConnector Association="OBLSCREENINGModel.FK_OSREFERINFO_OSSearchHistory" >
+          <ConnectorPoint PointX="6.125" PointY="13.480205078125001" />
+          <ConnectorPoint PointX="6.125" PointY="16.230499674479169" />
+          <ConnectorPoint PointX="7.625" PointY="16.230499674479169" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="OBLSCREENINGModel.vwReferCaseList" Width="1.5" PointX="0.75" PointY="13.75" Height="6.5955208333333388" />
+        <EntityTypeShape EntityType="OBLSCREENINGModel.vwReferList" Width="1.5" PointX="2.75" PointY="13.75" Height="6.5955208333333317" />
+        </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
